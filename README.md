@@ -1,6 +1,6 @@
 # Pipeline for making 3'UTR predictions using F3UTER
 
-This `snakemake` pipeline uses the F3UTER trained model to classify the input regions into potential 3'UTRs and non-3'UTRs. F3UTER was trained on a set of known 3’UTRs (positive examples) and non-3’UTRs (negative examples) from Ensembl human genome annotation (v94). The trained F3UTER model is provided in `/data/rf_model.rda`. F3UTER achieved a mean accuracy of 0.96, sensitivity of 0.92, specificity of 0.96, kappa of 0.78, AUC-ROC of 0.98 and AUC-PRC of 0.91 on the validation datasets (hold out) in 5-fold cross validation. This pipeline compiles the different features into a feature matrix and applies F3UTER to it to make predictions.
+This `snakemake` pipeline uses the F3UTER trained model to classify the input regions into potential 3'UTRs and non-3'UTRs. F3UTER was trained on a set of known 3’UTRs (positive examples) and non-3’UTRs (negative examples) from Ensembl human genome annotation (v94). The trained F3UTER model is provided in `/data/rf_model.rda`. F3UTER achieved a mean accuracy of 0.96, sensitivity of 0.92, specificity of 0.96, kappa of 0.78, AUC-ROC of 0.98 and AUC-PRC of 0.91 on the validation datasets (hold out) in 5-fold cross validation. This pipeline compiles the different omic features into a feature matrix and applies F3UTER to make predictions.
 
 
 # Getting Started
